@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".views.LoginActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:maxLines="1"
+            android:nextFocusDown="@id/textInputLayout_login_senha" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_login_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#FF5252"
+        android:text="@string/log_in"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="324dp"
+        android:background="#C0CCDA" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="or"
+        android:textColor="#6B6A6A"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#8492A6"
+        android:text="@string/register"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp" />
+
+
+</FrameLayout>

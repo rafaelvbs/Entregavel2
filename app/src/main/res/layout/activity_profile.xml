@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".views.profileActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_profile_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:maxLines="1"
+            android:nextFocusDown="@id/textInputLayout_profile_email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/textInputLayout_profile_senha" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_profile_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_profile_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/textInputLayout_profile_repetirSenha" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_profile_repetirSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/repeate_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_profile_salvarProfile"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FF5252"
+        android:text="SAVE PROFILE"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Digital House Foods</string>
+    <string name="email">email</string>
+    <string name="senha">Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="register">REGISTER</string>
+    <string name="name">Name</string>
+    <string name="repeate_password">Repeate password</string>
+    <string name="login_email_vazio">Campo email vazio</string>
+    <string name="senha_numero_caracteres">senha deve ter no mínimo 4 caracteres</string>
+    <string name="cadastro_email_invalido">Email invalido</string>
+    <string name="nome_vazio">Campo nome Vazio</string>
+    <string name="senhas_diferentes">Senhas diferem</string>
+    <string name="profile">Profile</string>
+    <string name="aoyama_moema">Aoyama - Moema</string>
+    <string name="yakissoba">Yakissoba</string>
+    <string name="teste">TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE</string>
+
+
+</resources>
